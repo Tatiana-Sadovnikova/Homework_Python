@@ -1,0 +1,11 @@
+1
+number = float(input())
+a = int(input())
+print(round(number, a))
+
+
+2
+number1 = int(input())
+number2 = int(input())
+SrA = (number1 + number2)/2
+print(round(SrA))
