@@ -1,0 +1,45 @@
+1-ОЕ ЗАДАНИЕ
+my_string = input()
+my_list = my_string.split()
+my_list.reverse
+print(my_list)
+
+
+2-ОЕ ЗАДАНИЕ
+my_string = input() 
+for i in range(len(my_string)):
+    if % 2 == 0:
+        print(my_string[i])
+
+
+3-Е ЗАДАНИЕ
+numbers1 = input()
+n = int(input())
+numbers2 = list(map(int, numbers1.split()))
+answer = [i **n for i in numbers2]
+print(answer)
+
+
+4-ОЕ ЗАДАНИЕ
+a = input()
+symbol = input()
+print(a.replace(symbol, symbol * 2))
+
+
+5-ОЕ ЗАДАНИЕ
+my_string = input()
+x = my_string.count('x')
+y = my_string.count('y')
+print(f'x: {x}, y: {y}')
+
+
+6-ОЕ ЗАДАНИЕ
+a = input()
+bracket1 = a.find('(')
+bracket2 = a.find(')')
+while bracket1 != -1 and bracket2 != -1:
+    b = a[bracket1 + 1: bracket2]
+    print(b)
+    bracket1 = a.find('(', bracket2)
+    bracket2 = a.find(')', bracket2 + 1)
+    
