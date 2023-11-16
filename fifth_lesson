@@ -1,0 +1,44 @@
+1-ОЕ ЗАДАНИЕ
+n = int(input())
+cities = []
+count = 0
+for _ in range(n):
+ city = input()
+ cities.append(city)
+for i in range(n):
+ if cities.count(cities[i]) >= 2:
+  count += 1
+print(count)
+
+
+2-ОЕ ЗАДАНИЕ
+my_string = input()
+my_string = my_string[0].upper() + my_string[1:]
+punctuation = ['.', '!', '?']
+for i in range(len(my_string)):
+    if my_string[i] in punctuation and i+1 < len(my_string) and my_string[i+1] != ' ':
+        my_string = my_string[:i+1] + my_string[i+1].upper() + my_string[i+2:]
+print(my_string)
+
+
+3-Е ЗАДАНИЕ
+string1 = input()
+string2 = input()
+string1 = string1.replace(" ", "")
+string2 = string2.replace(" ", "")
+if len(set(string1)) == len(set(string2)) and set(string1) == set(string2):
+    print("Строки яляются анаграммами.")
+else:
+    print("Строки не анаграммы.")
+
+
+4-ОЕ ЗАДАНИЕ
+algebra = input().split()
+trigonometry = input().split()
+gеometry = input().split()
+all_students = set(algebra) & set(trigonometry) & set(gеometry)
+all_students = sorted(all_students)
+if all_students:
+    print(' '.join(all_students))
+else:
+    print('Все три задачи никто не решил')
