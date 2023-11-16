@@ -1,0 +1,22 @@
+1-ОЕ ЗАДАНИЕ
+def palindrome(string):
+    string = string.replace(" ", "").lower()
+    return string == string[::-1]
+
+
+2-ОЕ ЗАДАНИЕ
+def name_surname_patronymic_age(name, surname, patronymic, age):
+    full_name = f"{surname} {name} {patronymic}"
+    my_string = f"{full_name} {age}г.р. зарегистрирован(-а)"
+    return my_string
+all_information = name_surname_patronymic_age(name, surname, patronymic, age)
+
+
+
+3-Е ЗАДАНИЕ
+def LALALA(a, b, c=0):
+    if c != 0:
+        maximum_num = a if a > b else b
+        return maximum_num if maximum_num > c else c
+    else:
+        return a if a > b else b
