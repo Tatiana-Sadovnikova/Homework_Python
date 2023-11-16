@@ -13,10 +13,9 @@ for i in range(len(my_string)):
 
 
 3-Е ЗАДАНИЕ
-numbers1 = input()
+numbers = input().split()
 n = int(input())
-numbers2 = list(map(int, numbers1.split()))
-answer = [i **n for i in numbers2]
+answer = [int(i) ** n for i in numbers]
 print(answer)
 
 
