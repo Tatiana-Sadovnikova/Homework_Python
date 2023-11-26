@@ -1,0 +1,10 @@
+my_string = input()
+numbers = list(map(int, my_string.split()))
+def find_max(my_list):
+    if len(my_list) == 1:
+        return my_list[0]
+    else:
+        max_rest = find_max(my_list[1:])
+        return my_list[0] if my_list[0] > max_rest else max_rest
+max_number = find_max(numbers)
+print("Наибольший элемент:", max_number)
