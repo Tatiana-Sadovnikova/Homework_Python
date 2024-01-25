@@ -1,0 +1,17 @@
+ЗАДАЧА №1
+import pandas as pd
+IMRAPTOR = np.random.randn(10,3)
+DF = pd.DataFrame(IMRAPTOR, columns = ["А", "Б", "В"])
+print(DF.head(3))
+print(DF.tail(3))
+
+import pandas as pd
+RR = {'Столбец 1': [1, 2, 3, 4, 5],
+        'Столбец 2': ['A', 'B', 'C', 'D', 'E'],
+        'Столбец 3': [True, False, True, True, False]}
+DF = pd.DataFrame(RR)
+first_3_rows = DF.head(3)
+print(first_3_rows)
+last_3_rows = DF.tail(3)
+print(last_3_rows)
+(Не знаю, какой будет правильней)
