@@ -1,0 +1,46 @@
+ЗАДАЧА №1
+import numpy as np
+import matplotlib.pyplot as plt
+def complex_function(x):
+    return (np.sin(x) + np.cos(x)**2) / np.power(x, 2)
+X = np.linspace(-10, 10, 100)
+Y = complex_function(X)
+plt.figure()
+plt.plot(X, Y, 'g--', alpha=0.5)
+plt.title("Вот такая моя функция")
+plt.xlabel("X")
+plt.ylabel("Y")
+plt.grid(True)
+plt.show()
+
+
+ЗАДАЧА №2
+import numpy as np
+import matplotlib.pyplot as plt
+X = np.random.normal(0, 1, 3000)
+Y = np.random.normal(3, 4, 3000)
+plt.figure()
+plt.scatter(X, Y, c='blue', marker='<', alpha=0.5, s=30)
+plt.title("Распределение точек")
+plt.xlabel("X")
+plt.ylabel("Y")
+plt.grid(True)
+plt.show()
+
+
+ЗАДАЧА №3
+import numpy as np
+import matplotlib.pyplot as plt
+data = np.random.normal(16, 2, 1000)
+print("Среднее значение:", np.mean(data))
+print("Стандартное отклонение:", np.std(data))
+print("Минимальное значение:", np.min(data))
+print("Максимальное значение:", np.max(data))
+plt.figure()
+plt.hist(data, bins=30, color='red', alpha=0.5)
+plt.title("Гистограмма результатов забега")
+plt.xlabel("Время (секунды)")
+plt.ylabel("Частота")
+plt.grid(True)
+plt.show()
+ Распределение результатов забега имеет пик около значения 16, это указывает на то, что большее кол-во школьников достигает этого времени.
