@@ -1,0 +1,32 @@
+ЗАДАЧА №1
+import numpy as np
+raptor = np.random.randint(1,11, size=100)
+print(raptor)
+raptor2 = np.count_nonzero(raptor > 7)/ len(raptor)*100
+print(raptor2)
+
+
+ЗАДАЧА №2
+import numpy as np
+result = []
+for _ in range(1000):
+ raptor = np.random.randint(1,11, size=100)
+ raptor2 = np.count_nonzero(raptor > 7)/ len(raptor)*100
+ result.append(raptor2)
+count = result.count(20)
+raptor2 = count / len(result)*100
+print(count)
+
+
+ЗАДАЧА №3
+import numpy as np
+raptor = np.tile(np.arange(1, 11), (10, 1)) 
+print(raptor)
+
+
+ЗАДАЧА №4
+import numpy as np
+raptor = np.tile(np.arange(1, 11), (10, 1)) 
+print(raptor)
+sum = np.sum(raptor, axis=0) 
+print(sum)
